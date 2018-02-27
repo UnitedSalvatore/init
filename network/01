@@ -1,0 +1,8 @@
+#!/bin/bash
+
+#
+#	-l	This flag can be used to list all available interfaces
+#	on the system, with no other additional information.
+#
+
+ifconfig -l

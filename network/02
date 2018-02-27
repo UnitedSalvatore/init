@@ -1,0 +1,9 @@
+#!/bin/bash
+
+for i in $(ifconfig -l)
+do
+	if [[ $i =~ ^en[0..9]$ ]]
+	then
+		ifconfig $i | grep "inet[ ]" | cut -d ' ' -f 2
+	fi
+done
