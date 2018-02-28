@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [[ "$#" -ge "1" ]]
+then
+	if [[ -d "$1" ]]
+	then
+		ls -S1 $1
+	else
+		echo "Argument must be a folder."
+	fi
+else
+	echo "usage: ./03 target_folder"
+fi

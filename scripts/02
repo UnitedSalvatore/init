@@ -1,0 +1,8 @@
+#!/bin/bash
+
+crontab -l > file
+task="0 4 * * 3"
+task="$task apt update >> /var/log/update_script.log && apt upgrade >> /var/log/update_script.log"
+echo "$task" >> file
+crontab file
+rm file

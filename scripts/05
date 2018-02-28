@@ -1,0 +1,3 @@
+#!/bin/bash
+
+echo "Mne ne nravits9 etot proect" | sed 's/Mne ne nravits9 etot proect/42/'
